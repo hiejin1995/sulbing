@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/*
+ font-family: "Noto Sans KR", sans-serif;
+*/
+
+@font-face{
+    font-family: 'a-seodanggae';
+    src:url(../font/a-seodanggae.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+figure{
+    width: fit-content;
+    height:fit-content;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+i{
+    font-size: 30px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: 1px solid #CECDCC;
+}
+header>h1{
+    margin-top: 15px;
+}
+.headmenu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+header .t_hidden{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    
+}
+.menu1{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.menu2{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 350px;
+}
+.menu2 i{
+    font-size: 20px;
+}
+.ham{
+    display: none;
+}
+/*메인배너*/
+main{
+    position: relative;
+}
+.main_t{
+    position: absolute;
+    text-align: right;
+    top: 250px;
+    right: 100px;
+}
+.main_t h2{
+    color:#3C2413;
+    font-size: 78px;
+    font-weight: 700;
+}
+.main_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.main_menu .icon_box .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_menu .icon_box .box img{
+    max-width: 100%;
+}
+.main_menu p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+section{
+    width: 100%;
+    margin: auto;
+}
+/*신제품*/
+.newitems{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h3{
+    color:#84664D;
+    font-family: 'a-seodanggae';
+    font-size: 40px;
+}
+
+.newitems i{
+    display: flex;
+    font-size: 40px;
+    justify-content: flex-end;
+    color: #3C2413;
+}
+.newitems .row .l_box .item1 .mainimg{
+    display: flex;
+    justify-content: center;
+}
+.newitems .l_box{
+    width: 50%;
+}
+.newitems .l_box .item1{
+    width: 100%;
+    height: 500px;
+    background-color: #C9E871;
+    border-radius: 30px;
+}
+.newitems .l_box h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.newitems .l_box p{
+    margin-left: 20px;
+}
+.newitems .l_box .item1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.newitems .l_box .item1 a{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+.newitems .r_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.newitems .r_box .item2{
+    height: 244px;
+    border: 1px solid #CECDCC;
+    border-radius: 30px;
+    display: flex;
+}
+.newitems .r_box .item_txt1{
+    position: relative;
+}
+.newitems .r_box .item_txt1 a{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+.newitems .r_box .item_txt2 {
+    position: relative;
+}
+.newitems .r_box .item_txt2 a{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+
+.newitems .r_box .item2:first-child{
+    margin-bottom: 12px;
+}
+.newitems .r_box .item2 .item_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.newitems .r_box .item2 .item_img figure{
+    margin: auto;
+}
+.newitems .r_box .item2 .item_txt1{
+    flex-basis: 50%;
+    border-radius: 30px;
+    background-color: #7AD16C;
+}
+.newitems .r_box .item2 .item_txt1 h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.newitems .r_box .item2 .item_txt2{
+    flex-basis: 50%;
+    border-radius: 30px;
+    background-color: #FFDC62;
+}
+.newitems .r_box .item2 .item_txt2 h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/*베스트 제품*/
+.bestbg{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    background-color: #EBE2D3;
+}
+.bestbg .bestitems{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.bestbg .bestitems h3{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.bestbg .bestitems .best_allbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bestbg .bestitems .best_allbox .b_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bestbg .bestitems .best_allbox .b_box .box{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #CECDCC;
+    border-radius: 30px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bestbg .bestitems .best_allbox .b_box .box p{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.bestbg figure{
+    height: 226px;
+}
+
+/*이벤트&뉴스*/
+.allbox{
+    margin-top: 100px;
+}
+.allbox .event{
+    border-bottom: 1px solid #CECDCC;
+}
+.allbox .event .line{
+    width: 90%;
+    height: 1px;
+    background-color: #CECDCC;
+}
+.allbox .event .e_text{
+    padding: 10px 0;
+}
+.allbox .event .e_text h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+.allbox .event .box img{
+    max-width: 100%;
+}
+.allbox .news .newstxt{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #CECDCC;
+}
+.allbox .news .newstxt h6{
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* 매장찾기/창업안내 */
+.noticebg{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    background-color: #AD9582;
+}
+.notice .nbox{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice .row{
+    margin-top: 100px;
+}
+.notice .nbox .box{
+    background-image: url(../img/작은배경.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notice .nbox .box .n_text{
+    text-align: center;
+    margin: 30px 0;
+}
+.notice .nbox .box .n_text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.notice .nbox .box .n_text strong{
+    font-size: 20px;
+    font-weight: 700;
+}
+.notice .nbox h4{
+    display: flex;
+    align-items: start;
+    font-size: 32px;
+    font-weight: 700;
+}
+.notice .nbox .box .search{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.notice .nbox .box .search .sbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+.notice .nbox .box .search .sbox .sbox_l{
+    display: flex;
+    justify-content: flex-start;
+}
+.sbox i{
+    font-size: 20px;
+}
+.notice .nbox .box .search .sbox p /*돋보기 끝부분에 배치*/{
+    margin-left: 10px;
+    margin-right: 150px;
+}
+/*SNS*/
+.snsallbox{
+    margin-top: 100px;
+}
+.snsallbox .footericon{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snsallbox .footericon .box{
+    display: flex;
+    width: 50%;
+    max-width: 400px;
+    justify-content: space-between;
+    color: #CECDCC;
+}
+.snsallbox .snsbox {
+    width: fit-content;
+    height: fit-content;
+}
+.snsallbox .snsbox .box img{
+    max-width: 100%;
+}
+.snsallbox .footericon .box i{
+    font-size: 40px;
+}
+.snsallbox .snsbox .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    border-top: 1px solid #CECDCC;
+    padding: 100px 100px;
+    position: relative;
+}
+footer nav ul{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer>h1{
+    position: absolute;
+    right: 100px;
+}
+footer p{
+    max-width: 627px;
+    margin-top: 100px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width:1200px){
+    .menu1,.menu2{
+        display: none;
+    }
+    .headmenu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ham{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
+    footer nav .footermenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer nav .footermenu li{
+        line-height: 3;
+    }
+}
+
+@media screen and (max-width:1200px){
+    
+    
+}
+
+@media screen and (max-width:991px){
+    .main_menu .icon_box .box{
+
+    }
+    .newitems .l_box{
+        margin-bottom: 15px;
+    }
+    .bestbg .bestitems .best_allbox .b_box .box{
+        margin-bottom: 15px;
+    }
+    .notice .nbox .box{
+        margin-bottom: 15px;
+    }
+    .allbox .news{
+        margin-top: 100px;
+    }
+    .newitems .l_box .item1 a{
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+    }
+    .snsallbox .snsbox .box{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:767px){
+
+}
+
+@media screen and (max-width:575px){
+
+}
+
+@media screen and (max-width:575px){
+    .main_t{
+        top: 30px;
+        right: 30px;
+    }
+    .main_t h2{
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
